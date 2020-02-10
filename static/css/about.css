@@ -1,0 +1,55 @@
+.header {
+    border: 1px solid #000000;
+}
+
+.about-stuff {
+    margin-left: 70px;
+    margin-right: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.3fr 1fr;
+    grid-gap: 30px 40px;
+    grid-template-areas: 
+        "tsa tsa"
+        "mission members"
+        "vision motto"
+        "creed creed";
+}
+
+.tsa {
+    grid-area: tsa;
+}
+
+.mission {
+    grid-area: mission;
+}
+
+.vision {
+    grid-area: vision;
+}
+
+.motto {
+    grid-area: motto;
+}
+
+.creed {
+    grid-area: creed;
+}
+
+.swirl-1 {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+.swirl-2 {
+    position: absolute;
+    z-index: -1;
+    bottom: -75%;
+    right: 0px;
+}
+
+h5 {
+    font-weight: bold;
+}
