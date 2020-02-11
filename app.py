@@ -18,5 +18,9 @@ def officers():
 def pathways():
     return render_template("pathways.html")
 
+@app.route('/design-brief')
+def design_brief():
+    return render_template("design_brief.html")
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5000, debug=True)
