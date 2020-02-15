@@ -1,0 +1,17 @@
+.hero {
+    display: grid;
+    background:#222831;
+    color: #ffffff;
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas:
+        " pic none ad"
+}
+
+.hero .ad {
+    grid-area: ad;
+}
+.hero img {
+    position: relative;
+    grid-area: pic;
+}
