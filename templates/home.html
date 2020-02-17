@@ -1,51 +1,8 @@
 {% extends 'layout.html' %}
 
-{% block css %}
-<style>
-    .container {
-        position: relative;
-        width: 50%;
-    }
-
-    .image {
-        display: block;
-        width: 50%;
-        height: 50%;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 130%;
-        width: 150%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #008CBA;
-    }
-
-    .container:hover .overlay {
-        opacity: 1;
-    }
-
-    .text {
-        color: white;
-        font-size: 15px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-</style>
-{% endblock css %}
-
 {% block body %}
 <section style="background:#B6C6F0">
+
     <div class="valign-wrapper container">
         <div class="row">
             <div class="col s6">
@@ -62,8 +19,9 @@
         </div>
     </div>
 </section>
+
 <section>
-    <div class="card side">
+    <div class="card side z-depth-3">
         <div class="card-content grey lighten-5">
             <center>
                 <h5><b>What is TSA?</b></h5>
@@ -81,7 +39,8 @@
                 Dubiski’s Technology Student Association chapter envokes the mission of TSA by enhancing personal
                 development, leadership, and career opportunities in STEM. All while encouraging it’s members to apply
                 and integrate these concepts through intracurricular activities, competitions, and other related
-                programs.</p>
+                programs.
+            </p>
         </div>
         <div class="card-tabs">
             <ul class="tabs tabs-fixed-width">
@@ -92,16 +51,28 @@
         </div>
         <div class="card-content grey lighten-4">
             <div id="test4">
-                <p><b>Mission Statement:</b>The Technology Student Association (TSA) enhances personal development,
+                <p>
+
+                    <b>Mission Statement:</b>
+                    The Technology Student Association (TSA) enhances personal development,
                     leadership, and career opportunities in science, technology, engineering, and math (STEM), whereby
                     members apply and integrate these concepts through intracurricular activities, competitions, and
-                    related programs.</p>
-                &nbsp;
-                <p><b>Vision:</b>TSA is accelerating student achievement and supporting teachers by providing engaging
-                    opportunities to develop STEM skills.</p>
-                &nbsp;
-                <p><b>Motto:</b>Learning to lead in a technical world.</p>
-                &nbsp;
+                    related programs.
+                </p>
+                <br>
+                <p>
+
+                    <b>Vision:</b>
+                    TSA is accelerating student achievement and supporting teachers by providing engaging
+                    opportunities to develop STEM skills.
+                </p>
+                <br>
+                <p>
+
+                    <b>Motto:</b>
+                    Learning to lead in a technical world.
+                </p>
+                <br>
             </div>
 
 
@@ -154,40 +125,46 @@
         <div class="col s4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/office.jpg">
+                    <img class="activator" src="/static/images/leadership.svg">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i
+                    <span class="card-title activator grey-text text-darken-4">Leadership<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <p><a class="btn" href="#">Learn More</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i
+                    <span class="card-title grey-text text-darken-4">Leadership<i
                             class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <p>
+                        Through participation in TSA activities, 92% Dubiski TSA members say they learned how tools
+                        communicate thoughts and ideas, how to organize a presentation and more about what their future
+                        professions will entail for them.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col s4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/office.jpg">
+                    <img class="activator" src="/static/images/scholarcap.svg">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i
+                    <span class="card-title activator grey-text text-darken-4">Scholarships<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
+                    <p><a class="btn" href="#">Learn More</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i
+                    <span class="card-title grey-text text-darken-4">Scholarships<i
                             class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <p>
+                        Our members say their experience prepared them academically for college and career (88%),
+                        influenced their college plans
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-</div>
 <section>
     <div class="row">
         <div class="col s4">
@@ -195,47 +172,48 @@
                 <center>
                     <h4>Competition</h4>
                 </center>
-                <div class="container">
-                    <img src="/static/images/competition.svg" alt="">
-                    <div class="overlay">
-                        <div class="text">Through participation in TSA activities, 92% Dubiski TSA members say they
-                            learned how to communicate thoughts and ideas,
-                            how to organize a presentation and more about what their future professions will entail for
-                            them.
-                        </div>
-                    </div>
-                </div>
+                <img src="/static/images/competition.svg" alt="">
+                <p class="text">
+                    Through participation in TSA activities, 92% Dubiski TSA members say they
+                    learned how to communicate thoughts and ideas,
+                    how to organize a presentation and more about what their future professions will entail for
+                    them.
+                </p>
                 <a class="btn" href="/competions">Lean about compettions</a>
             </div>
         </div>
         <div class="col s4">
             <div class="card-panel">
-                <center><h4>Leadership</h4></center>
-               <center><img class="responsive-img" src="/static/images/leadership.png" alt="" width="285" height="60"></center>
+                <center>
+                    <h4>Leadership</h4>
+                    <img class="responsive-img" src="/static/images/leadership.png" alt="" width="285" height="60">
+                </center>
                 <p>
-                    Through participation in TSA activities, 92% Dubiski TSA members say they learned how to communicate
-                    thoughts and ideas, how to organize a presentation and more about what their future professions will
+                    Through participation in TSA activities, 92% Dubiski TSA members say they learned how to
+                    communicate
+                    thoughts and ideas, how to organize a presentation and more about what their future professions
+                    will
                     entail for them.
                 </p>
                 <a class="btn" href="/competions">Lean about compettions</a>
             </div>
         </div>
 
-                <div class="col s4">
-                    <div class="card-panel">
-                        <center>
-                            <h4>Scholarships</h4>
-                        </center>
-                        <center><img class="responsive-img" src="/static/images/scholarcap.png" alt="" width="285"
-                                height="120"></center>
-                        <p>
-                            Our members say their experience prepared them academically for college and career (88%),
-                            influenced their college plans
-                        </p>
-                        <a class="btn" href="/competions">Lean about compettions</a>
-                    </div>
-                </div>
+        <div class="col s4">
+            <div class="card-panel">
+                <center>
+                    <h4>Scholarships</h4>
+                </center>
+                <center><img class="responsive-img" src="/static/images/scholarcap.png" alt="" width="285" height="120">
+                </center>
+                <p>
+                    Our members say their experience prepared them academically for college and career (88%),
+                    influenced their college plans
+                </p>
+                <a class="btn" href="/competions">Lean about compettions</a>
             </div>
+        </div>
+    </div>
 </section>
 
 <section>
