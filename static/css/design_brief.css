@@ -1,3 +1,7 @@
+.svg {
+    position: absolute;
+    z-index: -1;
+}
 .hero {
     display: grid;
     background:#222831;
@@ -12,8 +16,29 @@
     grid-area: ad;
 }
 
+hr {
+    background: #55636C;
+    width: 25%;
+}
+
 .hero img {
     position: relative;
     left: -650px;
     grid-area: pic;
+}
+
+#electric {
+    display: grid;
+    color: white;
+    grid-template-areas:
+     " ";
+    background:#222831;
+}
+
+.blueish {
+    color: #29A19C;
+}
+
+.bg-gray {
+    background: #545A63;
 }
