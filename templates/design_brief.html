@@ -7,6 +7,7 @@
     <title>Design Brief</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/static/css/design_brief.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -51,33 +52,31 @@
         <hr>
 
         <section id="electric" class="bg-dark-grey">
-            <div class="container">
-                <h2 class="blueish">
-                    Why Electric Cars?
-                </h2>
-                <div class="bg-gray row">
-                    <div class="col s6">
-                        <div class="container">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit rhoncus morbi
-                                urna
-                                elementum, vestibulum vulputate. Aenean viverra integer et gravida dignissim donec.
-                                Consequat at
-                                odio non vivamus gravida. Augue nunc enim urna, in ultrices adipiscing. Libero sit.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit rhoncus morbi
-                                urna
-                                elementum, vestibulum vulputate. Aenean viverra integer et gravida dignissim donec.
-                                Consequat at
-                                odio non vivamus gravida. Augue nunc enim urna, in ultrices adipiscing. Libero sit.
-                            </p>
-                        </div>
+            <h2 class="blueish">
+                Why Electric Cars?
+            </h2>
+            <div class="row">
+                <div class="col s5">
+                    <div class="bg-grey container">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit rhoncus morbi
+                            urna
+                            elementum, vestibulum vulputate. Aenean viverra integer et gravida dignissim donec.
+                            Consequat at
+                            odio non vivamus gravida. Augue nunc enim urna, in ultrices adipiscing. Libero sit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit rhoncus morbi
+                            urna
+                            elementum, vestibulum vulputate. Aenean viverra integer et gravida dignissim donec.
+                            Consequat at
+                            odio non vivamus gravida. Augue nunc enim urna, in ultrices adipiscing. Libero sit.
+                        </p>
                     </div>
-                    <div class="col s1"></div>
-                    <div class="col s5">
-                        <img class="responsive-img" src="/static/images/car_image.png" alt="">
-                    </div>
+                </div>
+                <div class="col s2"></div>
+                <div class="col s5 bg-grey">
+                    <img class="responsive-img" src="/static/images/car_image.png" alt="">
                 </div>
             </div>
         </section>
@@ -115,18 +114,63 @@
         </section>
 
         <section id="design">
-            <div class="pic1"></div>
-            <div class="pic2"></div>
-            <div class="pic3"></div>
-            <div class="pic4"></div>
-            <div class="pic4"></div>
+            <div class="teal pic1"><img src="/static/images/car_pic1.jpg" alt=""></div>
+            <div class="red pic2"></div>
+            <div class="pink pic3"><img src="/static/images/car_pic3.jpg" alt=""></div>
+            <div class="purple pic4"></div>
+            <div class="blue pic5"></div>
             <div class="text">
                 <h3>Exterior A Dash Of Glossy Finnish</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit rhoncus morbi urna
-                    elementum, vestibulum vulputate. Aenean viverra integer et gravida dignissim donec. Consequat at
-                    odio non vivamus gravida. Augue nunc enim urna, in ultrices adipiscing. Libero sit.
+                    All Dynamic Stream vehicles are designed to be the safest vehicle in its class. The low center of
+                    gravity, rigid body structure and large crumple zones provide unparalleled protection.
                 </p>
+                <p>
+                    The vehicles provides maximum versatility—able to carry at most 7 passengers and their cargo. Each
+                    second row seat folds flat independently, creating flexible storage for skis, furniture, luggage and
+                    more. The liftgate opens to a low trunk floor that makes loading and unloading easy and quick.
+                </p>
+                <p>
+                    Dynamic Stream utilizes an All-Wheel Drive that has two ultra-responsive, independent electric
+                    motors that digitally control torque to the front and rear wheels—for far better handling, traction
+                    and stability control. All vehicles are capable in rain, snow, mud and off-road.
+                </p>
+                <p>
+                    All vehicles are fully electric, so you never need to visit a gas station again. If you charge
+                    overnight at home, you can wake up to a full battery every morning. And when you’re on the road,
+                    it’s easy to plug in along the way—at any public station or with the Dynamic Stream charging
+                    network. We currently have over 14,000 Superchargers worldwide, with six new locations opening every
+                    week.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="contact" class="bg-dark-grey">
+            <h2 class="blueish">Contact Us</h2>
+            <div class="row">
+                <div class="col s12">
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field col s5">
+                                <label for="name">Name</label>
+                                <input id="name" class="validate" type="text">
+                            </div>
+                            <div class="col s2"></div>
+                            <div class="input-field col s5">
+                                <label for="email">Email</label>
+                                <input id="email" class="validate" type="text">
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <input type="submit" class="btn " value="Send">
+                        </div>
+
+                        <br><br>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -139,5 +183,10 @@
         </div>
     </footer>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script src="/static/js/init.js"></script>
 
 </html>
