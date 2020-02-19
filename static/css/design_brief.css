@@ -27,12 +27,11 @@ hr {
     padding-left: 5px;
     display: grid;
     grid-template-columns: 1fr 1.3fr 0.9fr 1.2fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
-    grid-template-areas: "pic1 pic3 pic3 text" 
-                         "pic1 pic4 .    text" 
-                         "pic2 pic4 pic5 pic5" 
-                         "pic2 .    pic5 pic5";
+    grid-template-areas: "pic2 text text pic6"
+                         "pic1 pic3 pic3 pic4";
+                        
 }
 #design img {
     width: 100%;
@@ -50,9 +49,22 @@ hr {
 .pic4 { grid-area: pic4; }
   
 .pic5 { grid-area: pic5; }
+
+.pic6 { grid-area: pic6; }
   
 .text { grid-area: text; }
 
 input, textarea {
     color: white;
+}
+
+.contact {
+    /* The image used */
+    background-image: url("/static/images/contact-bg.jpg");
+  
+    /* Center and scale the image nicely */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
