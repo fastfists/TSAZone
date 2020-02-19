@@ -6,7 +6,7 @@
 	/* Hide the images by default */
 	.mySlides {
 		display: none;
-		width: 50%;
+		width: 100%;
 	}
 
 	/* Add a pointer when hovering over the thumbnail images */
@@ -53,19 +53,11 @@
 		top: 0;
 	}
 
-	/* Container for image text */
-	.caption-container {
-		width: 50%;
-		text-align: center;
-		background-color: #222;
-		padding: 2px 16px;
-		color: white;
-	}
-
 	/* 8 columns side by side */
 	.column {
 		float: left;
-		width: 6.25%;
+		width: 12.5%;
+		height: 12.5%;
 	}
 
 	/* Add a transparency effect for thumnbail images */
@@ -113,7 +105,7 @@
 		var contactSecton = document.getElementsByClassName("contact")[0];
 
 		var dots = document.getElementsByClassName("demo");
-		var captionText = document.getElementById("caption");
+
 		if (n > slides.length) { slideIndex = 1 }
 		if (n < 1) { slideIndex = slides.length }
 		for (i = 0; i < slides.length; i++) {
@@ -124,10 +116,8 @@
 		}
 		slides[slideIndex - 1].style.display = "block";
 		dots[slideIndex - 1].className += " active";
-		captionText.innerHTML = dots[slideIndex - 1].alt;
 		
 		officerSection.innerHTML = officers[slideIndex - 1].innerHTML;
-
 		contactSecton.innerHTML = contactAreas[slideIndex - 1].innerHTML;
 
 	}
@@ -149,17 +139,11 @@
 
 
 <div class="grid-container">
-	<div class="team">
-		<h2>Meet our team</h2>
-		<p>At TSA we divide our team into different rooles this helps to ... Elit ultricies risus nunc elit odio. Sit
-			feugiat et posuere volutpat urna, morbi diam ut viverra.</p>
-	</div>
-
-	<div class="picture">
+	<div class="pic">
 		<div>
 			<div class="mySlides">
 				<div class="numbertext">1 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/faith.png" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ipsum augue augue purus
@@ -175,7 +159,7 @@
 
 			<div class="mySlides">
 				<div class="numbertext">2 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/EdithVP.png" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ipsum augue augue purus
@@ -191,7 +175,7 @@
 
 			<div class="mySlides">
 				<div class="numbertext">3 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/SLTG.png" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ipsum augue augue purus
@@ -207,7 +191,7 @@
 
 			<div class="mySlides">
 				<div class="numbertext">4 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/SonyaVP.png" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ipsum augue augue purus
@@ -223,7 +207,7 @@
 
 			<div class="mySlides">
 				<div class="numbertext">5 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/XimenaPrez.png" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ipsum augue augue purus
@@ -239,7 +223,7 @@
 
 			<div class="mySlides">
 				<div class="numbertext">6 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/ZackSecr.png" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>sutff</p>
@@ -253,7 +237,7 @@
 
 			<div class="mySlides">
 				<div class="numbertext">7 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/lonergan.jpeg" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ipsum augue augue purus
@@ -269,7 +253,7 @@
 
 			<div class="mySlides">
 				<div class="numbertext">8 / 8</div>
-				<img src="/static/images/officers/faith.png" style="width:100%">
+				<img src="/static/images/officers/faith.png" >
 				<div class="officerName">
 					<h2>Reporter</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ipsum augue augue purus
@@ -286,37 +270,33 @@
 			<!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
 			<a class="next" onclick="plusSlides(1)">❯</a> -->
 
-			<div class="caption-container">
-				<p id="caption"></p>
-			</div>
-
 			<div class="rows">
 				<div class="column">
 					<img class="demo cursor" src="/static/images/officers/faith.png" style="width:100%"
 						onclick="currentSlide(1)" alt="The Woods">
 				</div>
 				<div class="column">
-					<img class="demo cursor" src="/static/images/officers/faith.png" style="width:100%"
+					<img class="demo cursor" src="/static/images/officers/EdithVP.png" style="width:100%"
 						onclick="currentSlide(2)" alt="Cinque Terre">
 				</div>
 				<div class="column">
-					<img class="demo cursor" src="/static/images/officers/faith.png" style="width:100%"
+					<img class="demo cursor" src="/static/images/officers/SLTG.png" style="width:100%"
 						onclick="currentSlide(3)" alt="Mountains and fjords">
 				</div>
 				<div class="column">
-					<img class="demo cursor" src="/static/images/officers/faith.png" style="width:100%"
+					<img class="demo cursor" src="/static/images/officers/SonyaVP.png" style="width:100%"
 						onclick="currentSlide(4)" alt="Northern Lights">
 				</div>
 				<div class="column">
-					<img class="demo cursor" src="/static/images/officers/faith.png" style="width:100%"
+					<img class="demo cursor" src="/static/images/officers/XimenaPrez.png" style="width:100%"
 						onclick="currentSlide(5)" alt="Nature and sunrise">
 				</div>
 				<div class="column">
-					<img class="demo cursor" src="/static/images/officers/faith.png" style="width:100%"
+					<img class="demo cursor" src="/static/images/officers/ZackSecr.png" style="width:100%"
 						onclick="currentSlide(6)" alt="Snowy Mountains">
 				</div>
 				<div class="column">
-					<img class="demo cursor" src="/static/images/officers/faith.png" style="width:100%"
+					<img class="demo cursor" src="/static/images/officers/lonergan.jpeg" style="width:100%"
 						onclick="currentSlide(7)" alt="Snowy Mountains">
 				</div>
 				<div class="column">
@@ -338,13 +318,6 @@
 		<h2>Contact Info</h2>
 		<p>email: robert.lonergan@gmail.com</p>
 		<p>phone#: xxx-972-8975</p>
-	</div>
-
-	<div class="responsibilities">
-		<h2>Responsibilites</h2>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea a pulvinar elementum consectetur sapien
-			sit tortor. Dui sed dui turpis dui non viverra. </p>
 	</div>
 </div>
 {% endblock body %}

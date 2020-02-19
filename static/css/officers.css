@@ -1,10 +1,10 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 0.1fr 4fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr ;
-  grid-template-areas: "team 		         . picture picture" 
-  		                 "responsibilities  . picture picture" 
-		                   "responsibilities . officer contact";
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:  "officer pic" 
+						"contact pic"
+						"contact pic";
 
   padding-left: 80px;
   padding-top: 30px;
