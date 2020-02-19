@@ -2,43 +2,44 @@
     position: absolute;
     z-index: -1;
 }
-.hero {
-    display: grid;
-    background:#222831;
-    color: #ffffff;
-    padding-top: 40px;
-    grid-template-columns: 1px 1fr 1fr 2fr;
-    grid-template-areas:
-        " pic none none ad"
-}
-
-.hero .ad {
-    grid-area: ad;
-}
 
 hr {
     background: #55636C;
     width: 25%;
 }
 
-.hero img {
-    position: relative;
-    left: -650px;
-    grid-area: pic;
-}
-
-#electric {
-    display: grid;
-    color: white;
-    grid-template-areas:
-     " ";
-    background:#222831;
-}
-
 .blueish {
     color: #29A19C;
 }
 
+.bg-dark-grey {
+    background: #222831;
+    color: white;
+}
+
 .bg-gray {
     background: #545A63;
+    color: white;
 }
+
+#design {
+    display: grid;
+    grid-template-columns: 0.8fr 0.9fr 1.1fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "pic1 pic3 pic3 text" 
+                         "pic1 pic4 .    text" 
+                         "pic2 pic4 pic5 pic5" 
+                         "pic2 .    pic5 pic5";
+}
+  
+.pic1 { grid-area: pic1; }
+  
+.pic2 { grid-area: pic2; }
+
+.pic3 { grid-area: pic3; }
+  
+.pic4 { grid-area: pic4; }
+  
+.pic5 { grid-area: pic5; }
+  
+.text { grid-area: text; }
