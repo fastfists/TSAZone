@@ -3,13 +3,30 @@
     z-index: -1;
 }
 
-hr {
-    background: #55636C;
-    width: 25%;
+.nav-line {
+    border: 3px solid #A3F7BF;
+    margin: 0;
+}
+
+.sidenav li > a {
+    color: #fafafa;
+}
+
+.sidenav li > a {
+    color: #fafafa;
+}
+
+.card-panel {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .blueish {
     color: #29A19C;
+}
+
+.secondary-color {
+    color: #A3F7BF;
 }
 
 .bg-dark-grey {
@@ -29,8 +46,8 @@ hr {
     grid-template-columns: 1fr 1.3fr 0.9fr 1.2fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
-    grid-template-areas: "pic2 text text pic6"
-                         "pic1 pic3 pic3 pic4";
+    grid-template-areas:"pic2 text text pic6"
+                        "pic1 pic3 pic3 pic4";
                         
 }
 #design img {
@@ -39,19 +56,19 @@ hr {
     object-fit: cover;
     display: block; 
 }
-  
+
 .pic1 { grid-area: pic1; }
-  
+
 .pic2 { grid-area: pic2; }
 
 .pic3 { grid-area: pic3; }
-  
+
 .pic4 { grid-area: pic4; }
-  
+
 .pic5 { grid-area: pic5; }
 
 .pic6 { grid-area: pic6; }
-  
+
 .text { grid-area: text; }
 
 input, textarea {
@@ -61,7 +78,7 @@ input, textarea {
 .contact {
     /* The image used */
     background-image: url("/static/images/contact-bg.jpg");
-  
+
     /* Center and scale the image nicely */
     background-position: bottom;
     background-repeat: no-repeat;

@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Brief</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/static/css/design_brief.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        nav * {
-            color: black !important;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <nav class="grey lighten-1">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">
-                    <img style="float: left" src="/static/images/logo_pic.png" alt=""> Dynamic Stream
-                </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#electric">Why Electric?</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#design">Car Design</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="/home">Return to TSA</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#Electric">Why Electric?</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#design">Car Design</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="/home">Return to TSA</a></li>
-        </ul>
-    </header>
+{% block body %}
     <main>
 
         <section class="card-panel row bg-dark-grey">
@@ -54,7 +14,6 @@
             </div>
 
         </section>
-        <hr>
 
         <section id="electric" class="card-panel bg-dark-grey">
             <h2 class="blueish">
@@ -88,39 +47,35 @@
 
         <section class="container" id="about">
             <h2>About us</h2>
-            <div class="row">
-                <div class="col s6">
-                    <div class="card-panel">
-                        <h3>Vision</h3>
-                        <p>
-                            Dynamic Stream is a affordable car which we continue to produce accessibly to more and more
-                            people.
-                            Ultimately we are active in accelerating the progress of clean transportation and clean
-                            energy.
-                            Electric cars, batteries, and renewable energy generation and storage already exist
-                            independently,
-                            but when combined, they become even more powerful – that’s the future we are paving.
-                        </p>
-                        <p>
-                            All Dynamic Stream vehicles and components are produced at its factory in Grand Prairie,
-                            Texas.
-                            To achieve our goal of having the safest factories in the world, Dynamic Stream is taking a
-                            proactive
-                            approach to safety, requiring production employees to participate in a multi-day training
-                            program before
-                            ever setting foot on the factory floor. From there, Dynamic Stream continues to provide
-                            on-the-job training
-                            and track performance daily so that improvements can be made quickly.
-                        </p>
-                    </div>
+            <div class="about-grid">
+                <div class="card-panel">
+                    <h3>Vision</h3>
+                    <p>
+                        Dynamic Stream is a affordable car which we continue to produce accessibly to more and more
+                        people.
+                        Ultimately we are active in accelerating the progress of clean transportation and clean
+                        energy.
+                        Electric cars, batteries, and renewable energy generation and storage already exist
+                        independently,
+                        but when combined, they become even more powerful – that’s the future we are paving.
+                    </p>
+                    <p>
+                        All Dynamic Stream vehicles and components are produced at its factory in Grand Prairie,
+                        Texas.
+                        To achieve our goal of having the safest factories in the world, Dynamic Stream is taking a
+                        proactive
+                        approach to safety, requiring production employees to participate in a multi-day training
+                        program before
+                        ever setting foot on the factory floor. From there, Dynamic Stream continues to provide
+                        on-the-job training
+                        and track performance daily so that improvements can be made quickly.
+                    </p>
                 </div>
-                <div class="col s6">
-                    <div class="card-panel">
-                        <h3>Mission</h3>
-                        <p>Lead the transition to sustainable energy through the utilization of electric cars.</p>
-                    </div>
-                    <img src="/static/images/green_car.png" alt="">
+                <div class="card-panel">
+                    <h3>Mission</h3>
+                    <p>Lead the transition to sustainable energy through the utilization of electric cars.</p>
                 </div>
+                <img class="about-image" src="/static/images/green_car.png" alt="">
             </div>
         </section>
 
@@ -159,7 +114,7 @@
 
         <br><br>
 
-        <section id="contact" class="card-panel contact ">
+        <section id="contact" class="card-panel contact">
             <div class="row">
                 <div class="col offset-s7 s5">
                     <div class="card-panel bg-dark-grey">
@@ -197,18 +152,4 @@
         </section>
 
     </main>
-    <footer class="page-footer grey lighten-1">
-        <div class="footer-copyright center">
-            <div class="container">
-                © 2020 Copyright Text
-            </div>
-        </div>
-    </footer>
-</body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-<script src="/static/js/init.js"></script>
-
-</html>
+{% endblock body %}
